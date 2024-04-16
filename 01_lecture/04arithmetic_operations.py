@@ -46,36 +46,38 @@ print(f"The remainder when dividing 15 by 4 is: {remainder}")
 """
 Division with corresponding results
 """
-# # Division with floating-point result
-# result_float = 15 / 4
-# print(f"Result of 15 / 4 (floating-point): {result_float}")
-#
-# # Division with integer result using floor division
-# result_integer = 15 // 4
-# print(f"Result of 15 // 4 (integer): {result_integer}")
+# Division with floating-point result
+result_float = 15 / 4
+print(f"Result of 15 / 4 (floating-point): {result_float}")
+
+# Division with integer result using floor division
+result_integer = 15 // 4
+print(f"Result of 15 // 4 (integer): {result_integer}")
 
 """
 Numbers as input
 """
-# input_str = input("Which year were you born? ")
-# year = int(input_str)
-# print(f"Your age at the end of the year 2024: {2024 - year}")
-#
-# # You can even cast without using a second variable
-# year = int(input("Which year were you born? "))
-# print(f"Your age at the end of the year 2021: {2024 - year}")
+input_str = input("Which year were you born? ")
+year = int(input_str)
+print(f"Your age at the end of the year 2024: {2024 - year}")
+
+# You can even cast without using a second variable
+year = int(input("Which year were you born? "))
+print(f"Your age at the end of the year 2021: {2024 - year}")
 
 
 """
 (Re) using variables
 """
-# number1 = int(input("First number: "))
-# number2 = int(input("Second number: "))
-# number3 = int(input("Third number: "))
-#
-# sum = number1 + number2 + number3
-# print(f"The sum of the numbers: {sum}")
+number1 = int(input("First number: "))
+number2 = int(input("Second number: "))
+number3 = int(input("Third number: "))
 
-# print the sum of 3 numbers using two variables
+sum = number1 + number2 + number3
+print(f"The sum of the numbers: {sum}")
 
-# print the sum of 3 numbers using 1 variable
+#print the sum of 3 numbers using two variables
+
+sum = int(input("First number: ")) + int(input("Second number: ")) + int(input("Third number: "))
+
+#print the sum of 3 numbers using 1 variable
