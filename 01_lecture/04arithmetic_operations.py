@@ -1,6 +1,7 @@
 """
 Basic arithmetic operations in Python
 """
+"""
 rectangle_width = 20
 rectangle_length = 5
 
@@ -23,13 +24,13 @@ print(f"New width after decreasing by 1 unit: {rectangle_width}")
 # Calculate the diagonal of the rectangle using Pythagorean theorem
 rectangle_diagonal = (rectangle_length**2 + rectangle_width**2)**0.5 # ** is exponentiation operator -> raised to the power of
 print(f"Diagonal of the rectangle: {rectangle_diagonal}")
-
+"""
 """
 Modulo operator
 """
 # Calculate the remainder when dividing 15 by 4
-# remainder = 15 % 4
-# print(f"The remainder when dividing 15 by 4 is: {remainder}")
+remainder = 15 % 4
+print(f"The remainder when dividing 15 by 4 is: {remainder}")
 #
 # # Using modulo to check if a number is even or odd
 # number = 7

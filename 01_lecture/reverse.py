@@ -25,6 +25,7 @@ groceries_to_buy = [
     ["Fish", 2, 16.90],
     ["Cake", 1, 12.60],
     ["Steaks", 4, 9.95],
+    ["Coke", 3, 1.55],
 ]
 
 sum_total = 0

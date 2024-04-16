@@ -49,6 +49,3 @@ However, if the print command is given an additional argument end = "", it will 
 """
 print("Hi ", end="")
 print("there!")
-
-
-

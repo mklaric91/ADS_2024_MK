@@ -9,12 +9,12 @@ You can use variables to store any information that will be needed later in the 
 # my_age = 31         # storing a number value
 #
 # # The value stored in a variable can also be defined using other variables:
-# firstname = "Bart"
-# lastname = "Simpson"
+firstname = "Bart"
+lastname = "Simpson"
 #
-# character = firstname + " " + lastname
-#
-# print(character)
+character = firstname + " " + lastname
+
+print(character)
 
 """
 Here the values stored in the three variables are not obtained from user input. 
@@ -28,11 +28,11 @@ Reassignment of variables
 As implied by the name variable, the value stored in a variable can change.
 """
 
-# word = input("Type in a word: ")
-# print(word)
-#
-# word = input("Another word: ")
-# print(word)
+word = input("Type in a word: ")
+print(word)
+
+word = input("Another word: ")
+print(word)
 
 """
 Assigning multiple values at once
