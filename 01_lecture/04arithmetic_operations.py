@@ -33,15 +33,15 @@ remainder = 15 % 4
 print(f"The remainder when dividing 15 by 4 is: {remainder}")
 #
 # # Using modulo to check if a number is even or odd
-# number = 7
+number = 7
 #
 # # Check if the number is even
 # is_even = number % 2 == 0
 # print(f"Is the number {number} even? {is_even}")
 #
 # # Check if the number is odd
-# is_odd = number % 2 != 0
-# print(f"Is the number {number} odd? {is_odd}")
+is_odd = number % 2 != 0
+print(f"Is the number {number} odd? {is_odd}")
 
 """
 Division with corresponding results

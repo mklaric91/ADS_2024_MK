@@ -13,8 +13,15 @@ Example:
     shall we continue? >> no
     okay then
 """
+"""
 # Write your solution here
-
+while True:
+  print("hello world!")
+  user_input= input("Shall we continue?").lower()
+  if user_input=="no":
+    print("Okay then")
+    break
+"""
 """
 Write a program which asks the user for integer numbers.
 
@@ -41,22 +48,35 @@ Example:
     Exiting...
 """
 # Write your solution here
+"""
+from math import sqrt
 
+while True:
+  user_input=int(input("Please type in a number: >> "))
+  if user_input == 0:
+    print("Exiting...")
+  elif user_input < 0:
+    print("Invalid number")
+    break
+  else:
+    print(sqrt(user_input))
+"""
 """
 This program should print out a countdown. However, the program doesn't quite work. Please fix it.
 Hint: you can use the debugger of PyCharm to see how the program is executing.
 """
 # Fix the code
+"""
 number = 5
 print("Countdown!")
 while True:
   print(number)
   number = number - 1
-  if number > 0:
+  if number < 0:
     break
 
 print("Now!")
-
+"""
 """
 Write a program which asks the user for a year, and prints out the next leap year.
 If the user inputs a year which is a leap year (such as 2024), the program should print out the following leap year.
@@ -69,6 +89,39 @@ Examples:
     The next leap year after 2024 is 2028
 """
 # Write your solution here
+#def is_leap_year(year):
+#
+ #   return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+#
+#year=int(input("Year: >> "))
+#while year > 0:
+ #   i = 0
+  #  while i < year:
+   #     print(f "{i} ", end="")
+    #    i +=4
+     #   print("The next leap year after", year, "is", [year+4])
+   # break
+
+def is_leap_year(year):
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+def next_leap_year(current_year):
+    next_year = current_year + 1
+    while not is_leap_year(next_year):
+        next_year = next_year + 1
+    return next_year
+
+def main():
+   while True:
+    year = int(input("Year: "))
+    if year == 0:
+        break
+    next_year = next_leap_year(year)
+    print(f"The next leap year after {year} is {next_year}")
+
+if __name__ == "__main__":
+    main()
+
 
 """
 Please write a program which keeps asking the user for words. 

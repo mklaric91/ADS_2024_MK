@@ -9,6 +9,11 @@ Example:
     heyheyheyhey
 """
 # Write your solution here
+#string_input=input("Please type in a string: ")
+#amount_input=int(input("please type in an amount: "))
+#result=string_input * amount_input
+
+#print(result)
 
 """
 Write a program which asks the user for two strings and then prints out whichever is the longer of the two - 
@@ -27,6 +32,18 @@ Examples:
 """
 
 # Write your solution here
+string1=input("please type in string 1: ")
+string2=input("Please type in string 2: ")
+
+length1=len(string1)
+length2=len(string2)
+
+if length1 > length2:
+    print(f"The longer string is {string1}")
+elif length2 > length1:
+    print(f"The langer string is {string2}")
+else:
+    print("THe strings are equally long")
 
 """
 Write a program which asks the user for a string. The program then prints out the input string in reversed order, 

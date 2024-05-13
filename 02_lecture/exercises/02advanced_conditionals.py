@@ -17,7 +17,15 @@ Examples:
 
 """
 # Write your solution here
-
+number1 = int(input("Please type in the first number: "))
+number2 = int(input("Please type in another number: "))
+if number1 < number2:
+    print("The greater number was: ", number2)
+elif number1 > number2:
+    print("The gretaer number was: ", number1)
+else:
+    number1 = number2
+    print("The numbers are equal!")
 """
 Python comparison operators can also be used on strings. 
 String a is smaller than string b if it comes alphabetically before b. Notice however that the comparison is only reliable if

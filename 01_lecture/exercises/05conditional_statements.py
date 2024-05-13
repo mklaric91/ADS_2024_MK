@@ -11,6 +11,11 @@ Example:
     The number 17 is odd.
 """
 # Write your solution here
+#number=int(input("Enter a number:"))
+#if number % 2 == 0:
+#    print(f"the number", number, "is even")
+#else:
+#    print(f"the number", number, "is odd")
 
 
 """
@@ -27,8 +32,13 @@ Example:
     You passed the exam!
 """
 # Write your solution here
-
-
+#grade=int(input("Enter your exam grade"))
+#if grade <=50:
+#    print("Unfortunately, you failed the exam")
+#elif grade >=60:
+#    print("You passed the exam!")
+#elif grade >=90:
+#    print("Congratulations, you are excellent")
 """
 Write a program that simulates a simple lunch ordering system. 
 
@@ -49,3 +59,12 @@ Example:
     Your order: Salad with ranch dressing
 """
 # Write your solution here
+choice=input("Would you like a sandwich, salad, or wrap?").lower()
+if choice == "sandwich":
+    sandwich_choice = input("What kind of Sandwich do you want? Chicken, beef or veggie")
+elif choice == "salad":
+    dressing_choice = input("What kind of dressing would you like: vinaigrette, ranch, or caesar?")
+elif choice == "wrap":
+    toasted_choice = input("Do you want it toasted?")
+
+print("Your order:", choice, input(sandwich_choice), input(dressing_choice), input(toasted_choice))

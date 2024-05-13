@@ -10,7 +10,10 @@ Execute the function after its definition and run the program!
 """
 
 # Write your solution here
+def bark():
+    print("Woof")
 
+bark()
 """
 ### Function with 1 Argument, additional logic ###
 
@@ -30,7 +33,30 @@ Examples:
 """
 
 # Write your solution here
+"""
+def make_sound(animal):
+    animal = animal.lower()
+    if animal == "dog":
+        print("woof")
+    elif animal == "cat":
+        print("meow")
+    elif animal == "pig":
+        print("oink")
+    else:
+        print("???")
 
+i = 0
+while i < 5:
+    animal_input = input("enter an animal:")
+    make_sound(animal_input)
+    i += 1
+"""
+"""   
+for i in range(0,5):
+    animal_input = input ("enter an animal:")
+    make_sound(animal_input)
+    
+"""
 """
 ### Function with 2 Arguments ###
 
@@ -51,7 +77,16 @@ Ask the user repeatedly using a loop.
 """
 
 # Write your solution here
+def print_many_times(text, times):
+    print((text + "\n") * times)
+    for i in range (times)
+        print (text)
 
+    i = 0
+    while i < 5
+        print(text)
+
+print_many_times( text: "Gimme Five!", times: 5)
 """
 ### Return Values ###
 
@@ -67,7 +102,7 @@ Additional Task:
 Add a type hint to the return value of the function!
 """
 
-# Write your solution here
+ Write your solution here
 
 """
 ### Type Hints ###
@@ -91,7 +126,14 @@ Example Outputs:
 """
 
 # Write your solution here
+def super_print(text: str, uppercase: bool=False):
+    if uppercase:
+        print(text.upper())
+    else:
+        print(text)
 
+super_print("hello world", uppercase=True)
+super_print("hello world", uppercase=False)
 """
 ### Default Values ###
 
@@ -109,3 +151,12 @@ Example:
 """
 
 # Write your solution here
+
+def greet(name: str= "Unknown"):
+    print(f"Hello,{name}!")
+
+user_name=input("What's your name?")
+if user_name.strip():
+    greet(user_name)
+else:
+    greet()
