@@ -59,12 +59,22 @@ Example:
     Your order: Salad with ranch dressing
 """
 # Write your solution here
-choice=input("Would you like a sandwich, salad, or wrap?").lower()
+sandwich_choice= none
+dressing_choice= none
+toasted_choice= none
+
+choice=input("Would you like a sandwich, salad, or wrap? ").lower()
 if choice == "sandwich":
     sandwich_choice = input("What kind of Sandwich do you want? Chicken, beef or veggie")
 elif choice == "salad":
     dressing_choice = input("What kind of dressing would you like: vinaigrette, ranch, or caesar?")
 elif choice == "wrap":
-    toasted_choice = input("Do you want it toasted?")
+    toasted_choice = input("Do you want it toasted? yes/no ")
 
-print("Your order:", choice, input(sandwich_choice), input(dressing_choice), input(toasted_choice))
+print("Your order:", choice)
+if sandwich_choice:
+    print("Sandwich choice:", sandwich_choice), 
+elif dressing_choice:
+    print("Dressign choice:", dressing_choice)
+elif toasted_choice
+print("Toasted choice:, toasted_choice)
