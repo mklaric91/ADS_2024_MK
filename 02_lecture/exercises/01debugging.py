@@ -16,19 +16,13 @@ Example 2:
     Have a nice day!
 """
 number = int(input("Please type in a number: "))
-print(number, + f" must be my lucky number!")
-print("Have a nice day!")
+if number < 100:
+    print(number, "must be my lucky number!")
+    print("Have a nice day!")
 
-number = (input("Please type in a number: "))
-if number > 100:
+elif number > 100:
     print("The number was greater than one hundred")
-
-
-number = (input("Please type in a number: "))
-if number > 100:
-    print("The number was greater than one hundred")
-number - 100
-print("Now its value has decreased by one hundred")
-print("Its value is now" + number)
-print({number} + f" must be my lucky number!")
-print("Have a nice day!")
+    print("Now its value has decreased by one hundred")
+    print("Its value is now" + number- 100)
+    print(number- 100, "must be my lucky number!")
+    print("Have a nice day!")
